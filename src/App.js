@@ -6,6 +6,7 @@ import Nav from './Components/Nav'
 import {Routes, Route, Navigate} from "react-router-dom"
 import PrivateRoute from './Context/PrivateRoute'
 
+
 function App() {
   return (
     <div className="App">
@@ -24,7 +25,6 @@ function App() {
         } />
         <Route path="/login" element={<Login/>} />
       </Routes>
-// check comment
     </div>
   );
 }

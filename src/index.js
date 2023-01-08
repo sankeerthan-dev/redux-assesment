@@ -3,19 +3,18 @@ import ReactDOM from 'react-dom/client';
 import './index.css';
 import App from './App';
 import { Provider } from "react-redux";
-import { createStore } from "redux";
-import mainReducer from './Reducers'
+import store from './Reducers/index'
+import { BrowserRouter } from 'react-router-dom';
 
-
-const mainStore = createStore(mainReducer);
-console.log(mainReducer)
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <Provider store={mainStore}>
+    <BrowserRouter>
+    <Provider store={store}>
     <App />
     </Provider>
+    </BrowserRouter>
   </React.StrictMode>
 );
 

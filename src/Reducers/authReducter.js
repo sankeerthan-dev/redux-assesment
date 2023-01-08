@@ -1,21 +1,15 @@
-const initialState = {
-    token:""
-}
-
-export const auth=(state=initialState, action) => {
-    console.log(state);
+export const auth=(state={}, action) => {
     switch(action.type){
         case "Login":
-            return [
+            return {
                 ...state,
-                {
                     token: action.token
-                }
-            ]
+                
+    }
         case "Logout":
-            return [
-                { token:null,}
-            ]
+            return { token:null}
+        default:
+            return state
     }
 }
 
