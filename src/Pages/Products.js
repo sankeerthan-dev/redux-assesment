@@ -8,8 +8,9 @@ export default function Products() {
   const {id}=useParams()
   useEffect(()=>{
     axios
-      .get(`https://fakestoreapi.com/products/`+id)
+      .get('https://fakestoreapi.com/products/'+id)
       .then((e)=>setProduct(e.data))
+      console.log('products',product)
   },[])
   return (
     <div className='detailedDisplay'>
@@ -20,7 +21,7 @@ export default function Products() {
       <div className='details'>
         <h1>{product.title}</h1> <br/>
         <h2>Category: {product.category}</h2>
-        <h2>Ratings: {product.rating.rate} ({product.rating.count})</h2>
+        {/* <h2>Ratings: {product.rating.rate} ({product.rating.count})</h2> */}
         <h2>$ {product.price}</h2> <br/>
         <h2>{product.description}</h2>
       </div>
