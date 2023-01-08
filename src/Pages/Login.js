@@ -20,11 +20,11 @@ export default function Login() {
     if (token) return <Navigate to="/home"/>
     return (
     
-    <div>
-        <form onSubmit={subAction}>
+    <div className="formDesign">
+        <form onSubmit={subAction} >
             <input type="email" placeholder="Enter email ID" onChange={(e)=>setMail(e.target.value)} />
             <input type="password" placeholder="Enter Password" onChange={(e)=>setPwd(e.target.value)} />
-            <input type="submit" />
+            <input type="submit" id='submitButton' />
         </form>
     </div>
   )

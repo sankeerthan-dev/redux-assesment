@@ -36,3 +36,83 @@
     transform: rotate(360deg);
   }
 }
+
+.cardBox{
+  padding: 30px;
+  text-align: center;
+  border: 1px solid red;
+  height: 300px;
+  width: 300px;
+}
+
+.cardWrapper{
+  padding: 30px;
+  display: grid;
+  grid-template-columns: auto auto auto;
+  gap: 35px;
+}
+.cardWrapper img{
+  height: 200px;
+  width:200px;
+}
+
+.detailedDisplay{
+  display: flex;
+  flex-direction: row;
+}
+
+.detailedDisplay img{
+  width: 500px;
+  height: 500px;
+  margin: 40px;
+}
+
+.detailedDisplay div{
+  text-align: justify;
+  margin: 40px;
+}
+
+.details{
+  display: flex;
+  flex-direction: column;
+}
+
+.navContainer{
+  display: flex;
+  justify-content: space-around;
+  height: 70px;
+  background-color: #047BD5;
+  padding: 10px;
+}
+
+button{
+  height: 40px;
+  border-radius: 10px;
+}
+
+.navContainer a{
+  color: aliceblue;
+  font-size: 24px;
+}
+
+form{
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+input{
+  height: 25px;
+  border-radius: 5px;
+}
+
+#submitButton{
+  background-color: #047BD5;
+  color: aliceblue;
+}
+
+.formDesign{
+  padding: 30px;
+  width: 40%;
+  margin: auto;
+}
